@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Form View Controller-->
+        <scene sceneID="ury-Tb-tpZ">
+            <objects>
+                <viewController storyboardIdentifier="UIFormViewController" id="AR2-Pm-KAr" customClass="UIFormViewController" customModule="Checkpoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tRD-px-k8h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo" translatesAutoresizingMaskIntoConstraints="NO" id="vr8-Xs-2Zh">
+                                <rect key="frame" x="14" y="76" width="386" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Belanja Online dan Jual Beli Mudah Terpercaya" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkG-Gs-YeH">
+                                <rect key="frame" x="0.0" y="270" width="414" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apa yang kamu cari" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ka-GV-cSy">
+                                <rect key="frame" x="64" y="391" width="286" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="tfSearch:" destination="AR2-Pm-KAr" eventType="editingDidEnd" id="KDo-pe-zS9"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-Bo-FA3">
+                                <rect key="frame" x="175" y="548" width="64" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="64" id="L0u-1t-AOh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="Lkj-Ej-7nH"/>
+                                    <constraint firstAttribute="width" constant="64" id="Xxy-Or-RzG"/>
+                                </constraints>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOK:" destination="AR2-Pm-KAr" eventType="touchUpInside" id="exj-Vg-hvZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kkG-Gs-YeH" firstAttribute="top" secondItem="vr8-Xs-2Zh" secondAttribute="bottom" constant="44" id="Kqc-zJ-zUc"/>
+                            <constraint firstItem="tbc-Bo-FA3" firstAttribute="top" secondItem="9ka-GV-cSy" secondAttribute="bottom" constant="127" id="PIF-TE-8fH"/>
+                            <constraint firstItem="21a-f4-FAC" firstAttribute="trailing" secondItem="tbc-Bo-FA3" secondAttribute="trailing" constant="175" id="RkY-J1-2Fc"/>
+                            <constraint firstItem="vr8-Xs-2Zh" firstAttribute="leading" secondItem="tRD-px-k8h" secondAttribute="leading" constant="14" id="XVf-dn-EuI"/>
+                            <constraint firstItem="kkG-Gs-YeH" firstAttribute="leading" secondItem="21a-f4-FAC" secondAttribute="leading" id="Zfl-QF-EYB"/>
+                            <constraint firstItem="9ka-GV-cSy" firstAttribute="leading" secondItem="21a-f4-FAC" secondAttribute="leading" constant="64" id="c4n-LQ-VWq"/>
+                            <constraint firstItem="21a-f4-FAC" firstAttribute="trailing" secondItem="9ka-GV-cSy" secondAttribute="trailing" constant="64" id="h2h-ak-Hal"/>
+                            <constraint firstItem="9ka-GV-cSy" firstAttribute="top" secondItem="kkG-Gs-YeH" secondAttribute="bottom" constant="80" id="h2i-dO-R8u"/>
+                            <constraint firstItem="21a-f4-FAC" firstAttribute="trailing" secondItem="kkG-Gs-YeH" secondAttribute="trailing" id="lEB-Pu-hTw"/>
+                            <constraint firstItem="vr8-Xs-2Zh" firstAttribute="leading" secondItem="21a-f4-FAC" secondAttribute="leading" constant="14" id="pUD-8c-ZAz"/>
+                            <constraint firstItem="vr8-Xs-2Zh" firstAttribute="top" secondItem="21a-f4-FAC" secondAttribute="top" constant="32" id="qu8-PX-Hp5"/>
+                            <constraint firstItem="21a-f4-FAC" firstAttribute="trailing" secondItem="tbc-Bo-FA3" secondAttribute="trailing" constant="175" id="rB4-zE-rM1"/>
+                            <constraint firstItem="21a-f4-FAC" firstAttribute="trailing" secondItem="vr8-Xs-2Zh" secondAttribute="trailing" constant="14" id="tcM-2Y-wOm"/>
+                            <constraint firstItem="tbc-Bo-FA3" firstAttribute="leading" secondItem="21a-f4-FAC" secondAttribute="leading" constant="175" id="y2J-vg-H2g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21a-f4-FAC"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbDesc" destination="kkG-Gs-YeH" id="orG-zJ-ig6"/>
+                        <outlet property="logo" destination="tRD-px-k8h" id="gYo-tg-icG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAr-sf-uto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.02898550724643" y="-120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_logo" width="552" height="150"/>
+    </resources>
+</document>
